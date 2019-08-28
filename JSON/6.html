@@ -13,7 +13,6 @@
     var dataJSON = JSON.parse(data)
     var person = dataJSON.results[0];
     var output = document.querySelector('#output');
-
     var html = person.name.first + '  ' + person.name.last
     html += '<img src="'+person.picture.thumbnail+'">';
     output.innerHTML = html;
